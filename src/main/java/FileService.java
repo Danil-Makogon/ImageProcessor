@@ -5,4 +5,5 @@ public class FileService {
     public List<ImageDescriptor> readImageDescriptors(String fileName) {
         return Collections.EMPTY_LIST;
     }
+
 }

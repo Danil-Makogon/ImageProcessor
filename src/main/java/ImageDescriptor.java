@@ -20,7 +20,7 @@ public class ImageDescriptor {
         return actionName;
     }
 
-    private ImageDescriptor csvFileToImageDescriptor(String fileName) throws IOException {
+    public static ImageDescriptor csvFileToImageDescriptor(String fileName) throws IOException {
         ImageDescriptor descriptor = new ImageDescriptor("", "");
         String row;
         BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -32,4 +32,5 @@ public class ImageDescriptor {
         br.close();
         return descriptor;
     }
+
 }
